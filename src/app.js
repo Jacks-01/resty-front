@@ -25,8 +25,8 @@ const App = props => {
         { name: 'fake thing 2', url: 'http://fakethings.com/2' },
       ],
     };
-    setData({ data });
-    setParams({ requestParams });
+    setData(data);
+    setParams(requestParams);
   }
 
   return (
