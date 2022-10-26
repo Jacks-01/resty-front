@@ -23,9 +23,9 @@ const Form = props => {
         </label>
         <label className="methods">
           <span onClick={(e) => { setMethod(e.target.value) }} id="get">GET</span>
-          <span id="post">POST</span>
-          <span id="put">PUT</span>
-          <span id="delete">DELETE</span>
+          <span onClick={(e) => { setMethod(e.target.value) }} id="post">POST</span>
+          <span onClick={(e) => { setMethod(e.target.value) }} id="put">PUT</span>
+          <span onClick={(e) => { setMethod(e.target.value) }} id="delete">DELETE</span>
         </label>
       </form>
     </>
