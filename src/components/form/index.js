@@ -9,6 +9,7 @@ const Form = props => {
 
   const handleSubmit = e => {
     e.preventDefault();
+    console.log(method)
     props.handleApiCall({ method, url });
   }
 
@@ -22,10 +23,10 @@ const Form = props => {
           <button type="submit">GO!</button>
         </label>
         <label className="methods">
-          <span onClick={(e) => { setMethod(e.target.value) }} id="get">GET</span>
-          <span onClick={(e) => { setMethod(e.target.value) }} id="post">POST</span>
-          <span onClick={(e) => { setMethod(e.target.value) }} id="put">PUT</span>
-          <span onClick={(e) => { setMethod(e.target.value) }} id="delete">DELETE</span>
+          <span onClick={(e) => { setMethod(e.target.innerHTML) }} id="get">GET</span>
+          <span onClick={(e) => { setMethod(e.target.innerHTML) }} id="post">POST</span>
+          <span onClick={(e) => { setMethod(e.target.innerHTML) }} id="put">PUT</span>
+          <span onClick={(e) => { setMethod(e.target.innerHTML) }} id="delete">DELETE</span>
         </label>
       </form>
     </>
