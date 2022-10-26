@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState} from 'react';
 
 import './app.scss';
 
@@ -9,18 +9,13 @@ import Footer from './components/footer';
 import Form from './components/form';
 import Results from './components/results';
 
-class App extends React.Component {
+const App = props => {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: null,
-      requestParams: {},
-    };
-  }
+  const [data, setData] = useState([{}])
+  const [requestParams, setParams] = useState({})
 
   callApi = (requestParams) => {
-    // mock output
+    // mock outputrq a
     const data = {
       count: 2,
       results: [
@@ -31,7 +26,6 @@ class App extends React.Component {
     this.setState({data, requestParams});
   }
 
-  render() {
     return (
       <React.Fragment>
         <Header />
@@ -43,6 +37,5 @@ class App extends React.Component {
       </React.Fragment>
     );
   }
-}
 
 export default App;
