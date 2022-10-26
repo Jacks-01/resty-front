@@ -1,4 +1,5 @@
-import {useState} from 'react';
+import React, { useState } from 'react';
+
 
 import './app.scss';
 
@@ -14,8 +15,8 @@ const App = props => {
   const [data, setData] = useState([{}])
   const [requestParams, setParams] = useState({})
 
-  callApi = (requestParams) => {
-    // mock outputrq a
+  const callApi = (requestParams) => {
+    // mock output
     const data = {
       count: 2,
       results: [
@@ -23,16 +24,17 @@ const App = props => {
         {name: 'fake thing 2', url: 'http://fakethings.com/2'},
       ],
     };
-    this.setState({data, requestParams});
+    setData({data});
+    setParams({requestParams});
   }
 
     return (
       <React.Fragment>
         <Header />
-        <div>Request Method: {this.state.requestParams.method}</div>
-        <div>URL: {this.state.requestParams.url}</div>
-        <Form handleApiCall={this.callApi} />
-        <Results data={this.state.data} />
+        <div>Request Method: {requestParams.method}</div>
+        <div>URL: {requestParams.url}</div>
+        <Form handleApiCall={callApi} />
+        <Results data={data} />
         <Footer />
       </React.Fragment>
     );
