@@ -13,7 +13,7 @@ import Results from './components/results';
 
 const App = props => {
 
-  const [data, setData] = useState([{}])
+  const [data, setData] = useState(null)
   const [requestParams, setParams] = useState({})
 
   const callApi = (requestParams) => {
