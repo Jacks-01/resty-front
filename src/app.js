@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios'
 
 
 import './app.scss';
@@ -20,24 +21,24 @@ const App = props => {
     const data = {
       count: 2,
       results: [
-        {name: 'fake thing 1', url: 'http://fakethings.com/1'},
-        {name: 'fake thing 2', url: 'http://fakethings.com/2'},
+        { name: 'fake thing 1', url: 'http://fakethings.com/1' },
+        { name: 'fake thing 2', url: 'http://fakethings.com/2' },
       ],
     };
-    setData({data});
-    setParams({requestParams});
+    setData({ data });
+    setParams({ requestParams });
   }
 
-    return (
-      <React.Fragment>
-        <Header />
-        <div>Request Method: {requestParams.method}</div>
-        <div>URL: {requestParams.url}</div>
-        <Form handleApiCall={callApi} />
-        <Results data={data} />
-        <Footer />
-      </React.Fragment>
-    );
-  }
+  return (
+    <React.Fragment>
+      <Header />
+      <div>Request Method: {requestParams.method}</div>
+      <div>URL: {requestParams.url}</div>
+      <Form handleApiCall={callApi} />
+      <Results data={data} />
+      <Footer />
+    </React.Fragment>
+  );
+}
 
 export default App;
