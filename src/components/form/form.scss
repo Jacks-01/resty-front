@@ -9,10 +9,17 @@ $middle-blue: #7ec4cfff;
 $maximum-blue: #52b2cfff;
 
 form {
-  display: flex;
-
   display: inline-block;
   margin: auto;
+
+  div {
+    display: flex;
+    justify-content: center;
+    
+    textarea {
+      align-self: center;
+    }
+  }
 
   input {
     display: flex;
