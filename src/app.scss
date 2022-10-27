@@ -25,15 +25,14 @@ body {
   }
 
   footer {
-    background: darken($backgroundColor, 50);
+    background: darken($wild-blue-yonder, 30);
     border-top: 1px solid #eee;
     padding: 1em 3em;
     margin: 0;
   }
 
   header {
-    background: darken($backgroundColor, 75);
-    border-bottom: 1px solid #eee;
+    background: darken($wild-blue-yonder, 10);
     color: #eee;
     padding: 0;
     margin: 0;

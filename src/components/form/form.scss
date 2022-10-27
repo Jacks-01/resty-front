@@ -23,7 +23,7 @@ form {
 
   button {
     align-items: center;
-    background-color: #fee6e3;
+    background-color: $maximum-blue;
     border: 2px solid #111;
     border-radius: 8px;
     box-sizing: border-box;
@@ -90,7 +90,7 @@ form {
         cursor: pointer;
         margin-right: 1rem;
         padding: 0.25rem 0.5rem;
-        background-color: #d4bdc8;
+        background-color: $cameo-pink;
 
         &:hover,
         &.active {
