@@ -4,8 +4,6 @@ import axios from 'axios'
 
 import './app.scss';
 
-// Let's talk about using index.js and some other name in the component folder
-// There's pros and cons for each way of doing this ...
 import Header from './components/header';
 import Footer from './components/footer';
 import Form from './components/form';
@@ -17,8 +15,7 @@ const App = props => {
   const [requestParams, setParams] = useState({})
 
   const callApi = async (requestParams) => {
-    // mock output
-    const data = await axios.get(requestParams.url);
+    const data = await axios(requestParams);
     setData(data);
     setParams(requestParams);
   }
