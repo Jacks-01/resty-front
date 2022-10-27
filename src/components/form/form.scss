@@ -1,6 +1,13 @@
 $backgroundColor: #fffbfb;
 $radius: 40%;
 
+/*COLOR THEME */
+$cameo-pink: #d4afb9ff;
+$light-periwinkle: #d1cfe2ff;
+$wild-blue-yonder: #9cadceff;
+$middle-blue: #7ec4cfff;
+$maximum-blue: #52b2cfff;
+
 form {
   display: flex;
 
@@ -83,7 +90,7 @@ form {
         cursor: pointer;
         margin-right: 1rem;
         padding: 0.25rem 0.5rem;
-        background: #ccc;
+        background-color: #d4bdc8;
 
         &:hover,
         &.active {
@@ -95,7 +102,6 @@ form {
 }
 
 .crud {
-  background-color: #fbeee0;
   border: 2px solid #422800;
   border-radius: 30px;
   box-shadow: #422800 4px 4px 0 0;
@@ -128,3 +134,5 @@ form {
     padding: 0 25px;
   }
 }
+
+// button references: https://getcssscan.com/css-buttons-examples
