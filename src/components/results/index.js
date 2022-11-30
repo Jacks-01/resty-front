@@ -1,3 +1,5 @@
+import './results.scss'
+
 const Results = props => {
   return (
     <section>

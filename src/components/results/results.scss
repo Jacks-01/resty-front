@@ -1,0 +1,16 @@
+$cameo-pink: #d4afb9ff;
+$light-periwinkle: #d1cfe2ff;
+$wild-blue-yonder: #9cadceff;
+$middle-blue: #7ec4cfff;
+$maximum-blue: #52b2cfff;
+
+
+section {
+
+    margin:auto;
+    width: 50vw;
+
+    margin-top: 5rem;
+
+    background-color: darken($light-periwinkle, 5);
+}
